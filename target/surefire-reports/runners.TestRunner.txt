@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.798 s <<< FAILURE! - in runners.TestRunner
+Add Employee Feature.Add Employee with first name and last name  Time elapsed: 20.402 s  <<< FAILURE!
+org.junit.ComparisonFailure: The name is not correct!! expected:<Te[]nir Sirnames> but was:<Te[y]nir Sirnames>
+

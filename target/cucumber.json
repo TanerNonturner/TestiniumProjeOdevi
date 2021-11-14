@@ -1,0 +1,82 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-13T14:30:20.403Z",
+        "line": 6,
+        "name": "Getting top three customers with highest credit limit",
+        "description": "",
+        "id": "database-testing;getting-top-three-customers-with-highest-credit-limit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2128380200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am connected to the database",
+            "match": {
+              "location": "steps.DBsteps.ı_am_connected_to_the_database()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 316204200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I get top three customers by credit limit",
+            "match": {
+              "location": "steps.DBsteps.ı_get_top_three_customers_by_credit_limit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "print their names and credit limit",
+            "match": {
+              "location": "steps.DBsteps.print_their_names_and_credit_limit()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 15532300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I close conncetion",
+            "match": {
+              "location": "steps.DBsteps.ı_close_the_database_connection(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": []
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB1"
+          }
+        ]
+      }
+    ],
+    "name": "Database Testing",
+    "description": "",
+    "id": "database-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DBtesting.feature",
+    "tags": []
+  }
+]
