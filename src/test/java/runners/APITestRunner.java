@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features ="src/test/resources/features", // You can specify the feature file, you can write which feature file to execute,we can also run all features
 		glue ="steps" ,// shows where we can find implementation feature file steps.
 		dryRun= false,// if true it does not really run the steps. it checks if every steps in feature file is defined in code
-		tags ="@GetOneBook",
+		tags ="@trello",
 		monochrome =true,
 		plugin = {
 				"pretty",//prints gherkin steps in console

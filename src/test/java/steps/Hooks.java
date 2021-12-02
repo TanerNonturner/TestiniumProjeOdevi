@@ -8,15 +8,15 @@ import utils.CommonMethods;
 
 public class Hooks  {
 
-	//@Before
+	@Before
 	public void start(Scenario scenario) {
 		System.out.println("Starting Test "+ scenario.getName());
-		BaseClass.setUp();
+		//BaseClass.setUp();
 		
 	}
 	
 	
-	//@After
+	@After
 	public void end(Scenario scenario) {
 		
 		byte[] picture;
@@ -34,6 +34,6 @@ public class Hooks  {
 		
 		System.out.println("Ending Test "+scenario.getName());
 		System.out.println(scenario.getStatus());
-		BaseClass.tearDown();
+		//BaseClass.tearDown();
 	}
 }

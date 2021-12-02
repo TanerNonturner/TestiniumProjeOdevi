@@ -1,5 +1,8 @@
 package practiceAPIUtils;
 
+import io.restassured.RestAssured;
+import steps.GeneratingTokenUtils;
+
 public class APIConstants {
 	
 	public static final String BASE_URI="https://demoqa.com";
@@ -11,4 +14,6 @@ public class APIConstants {
 	public static final String DELETE_ACCOUNT="/Account/v1/User/{UUID}";
 	public static final String GET_ONE_BOOK_ENDPOÝNT="/BookStore/v1/Book";
 	public static final String POST_GENERATE_TOKEN_ENDPOÝNT="/Account/v1/GenerateToken";
+	public static final String BASE_TRELLOAPI_URI ="https://api.trello.com/1/";
+	public static final String TRELLO_PUT_BOARD_ENDPOÝNT ="boards/ ";
 }

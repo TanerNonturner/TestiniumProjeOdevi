@@ -3,6 +3,12 @@ package testbases;
 import pages.AddEmployeePageElements;
 import pages.DashboardPageWithFactory;
 import pages.EmployeeListPageElements;
+import pages.GittiGidiyorCartPageElements;
+import pages.GittiGidiyorCartisEmptyPageElements;
+import pages.GittiGidiyorChosenProductPageElements;
+import pages.GittiGidiyorMainPageElements;
+import pages.GittiGidiyorResultSearchPageElements;
+import pages.GittiGidiyorSecondPageElements;
 import pages.LoginPageWithFactory;
 import pages.PersonelDetailsElements;
 
@@ -14,7 +20,12 @@ public class PageInitializer extends BaseClass {
 	public static AddEmployeePageElements addEmployee;
 	public static PersonelDetailsElements personelDetails;
 	public static EmployeeListPageElements employeeList;
-	
+	public static GittiGidiyorMainPageElements gittiGidiyorMain;
+	public static GittiGidiyorResultSearchPageElements gittiGidiyorResult;
+	public static GittiGidiyorSecondPageElements gittiGidiyorSecond;
+	public static GittiGidiyorChosenProductPageElements gittiGidiyorChosen;
+	public static GittiGidiyorCartPageElements gittiGidiyorCart;
+	public static GittiGidiyorCartisEmptyPageElements gittiGidiyorCartEmpty;
 	
 	//we always initialize when new driver created!!
 	public static void initialize() {
@@ -23,5 +34,11 @@ public class PageInitializer extends BaseClass {
 		addEmployee = new AddEmployeePageElements();
 		personelDetails = new PersonelDetailsElements();
 		employeeList = new EmployeeListPageElements();
+		gittiGidiyorMain= new GittiGidiyorMainPageElements();
+		gittiGidiyorResult = new GittiGidiyorResultSearchPageElements();
+		gittiGidiyorSecond = new GittiGidiyorSecondPageElements();
+		gittiGidiyorChosen = new GittiGidiyorChosenProductPageElements();
+		gittiGidiyorCart = new GittiGidiyorCartPageElements();
+		gittiGidiyorCartEmpty = new GittiGidiyorCartisEmptyPageElements();
 	}
 }

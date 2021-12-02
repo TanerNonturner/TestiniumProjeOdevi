@@ -1,0 +1,4 @@
+#added a new entry
+#Thu Dec 02 04:00:09 TRT 2021
+productPrice=5.051,29 TL
+productInfo=Lenovo IdeaCentre 3 Intel Core i3 10100 4GB 256GB SSD Freedos Masa\u00FCst\u00FC Bilgisayar 90NB00BTTX

@@ -8,4 +8,5 @@ public class GlobalVariables {
 	public static String book1 ="9781449325862";
 	public static String book2 ="9781449331818";
 	public static String book3 ="9781449337711";
+	public static String trelloToken ="61a6e913e4ef54ed3057a0edf910ac1ee09b855c05413491ac50bec10ac67644";
 }

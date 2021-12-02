@@ -1,10 +1,14 @@
 package utils;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
@@ -23,6 +27,33 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import testbases.PageInitializer;
 
 public class CommonMethods extends PageInitializer {
+	
+	
+	/**
+	 * This method writes into txt file
+	 * @param filepath
+	 * @param key
+	 * @param value
+	 * @throws Exception
+	 */
+	
+	public static void writeTXTfile(String filepath, String key,String value) throws Exception {
+		//We want to write to an existing file and add more pairs/entries
+		//String filePath ="C:\\Users\\P&B\\eclipse-workspace\\JavaTaner\\src\\lesson32\\configs\\example.properties";
+		String filePath= filepath;
+	
+		
+		FileInputStream fis = new FileInputStream(filePath);
+		
+		Properties prop = new Properties();
+		prop.load(fis);
+		
+		prop.setProperty(key,value);
+		
+		FileOutputStream fos = new FileOutputStream(filePath);
+		
+		prop.store(fos, "added a new entry");
+	}
 
 	/**
 	 * This methods clears text box and send text.
